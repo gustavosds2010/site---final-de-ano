@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <content="width=device-width, initial-scale=1.0">
+    <title>Site de Compras</title>
+</head>
+<body>
+    <header>
+    <!-- Cabeçalho do Site-->
+     <div class="logo">
+        <h1>Tsuki Sushi</h1>
+        <p>Tradição, sabor e arte em cada peça</p>
+        </div>
+    </header>
+    <!--Menu de Naveação-->
+    <nav>
+        <!--A tag <a> cria um link
+            href define o endereço para onde o usuário será direcionado
+            target="_blank" abre o link em uma nova aba
+            -->
+        <div class="menu">
+        <a href="#inicio"> Início</a>
+        <a href="#preodutos"> Produtos</a>
+        <a href="#sobre"> Sobre</a>
+        <a href="contato"> Contato</a>
+        </div>
+    </nav>
+
+    <!--Conteúdo Principal-->
+
+    <main>
+        <!--Seção Inicial-->
+        <section id="inicio">
+            <div class="banner">
+                <h2>Bem vindo a loja</h2>
+                <p>Confira nossos produtos</p>
+            </div>
+            </section>
+
+            <!--Seção de Produtos-->
+            <section id="produtos">
+                <h2> Nossos produtos</h2>
+                <!--div com produtos-->
+                <div class="produtos">
+                    <!--Imagens do Produto-->
+                     <h3>porção de sushi - 20 peças</h3>
+                    <p class="preco">
+                        R$34,99,00</p>
+                    <img
+                    src="https://www.receitasnestle.com.br/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/d8cc7f9b55f0ec6787420d920c9e14a1.jpg?itok=bMBMq8NS"
+                    alt="porção de sushi - 20 peças">
+                    <h3></h3>
+                        <!--Botão que abre o Modal-->
+                        <button>
+                            <class="botao"
+                            onclick="document.getElementById ('modal-porção-de-sushi').style.display"='block'>
+                            comprar
+                        </button>
+                </div>
+            </section>
+            <section id="produtos">
+                <!--div com produtos-->
+                <div class="produtos">
+                    <!--Imagens do Produto-->
+                    <h3>porção de sashimi - 15 peças</h3>
+                    <p class="preco">
+                        R$47,99</p>
+                    <img
+                    src="https://controlenamao.com.br/blog/wp-content/uploads/2024/12/Nigiri.jpg"
+                    alt="porção de sashimi - 15 peças">
+                    <h3></h3>
+                          <!--Botão que abre o Modal-->
+                        <button>
+                            <class="botao"
+                            onclick="document.getElementById ('modal-porção-de-sashimi').style.display"='block'>
+                            comprar
+                        </button>
+                </div>
+            </section>
+<section id="produtos">
+                <!--div com produtos-->
+                <div class="produtos">
+                    <!--Imagens do Produto-->
+                    <h3>porção de temaki - 4 peças</h3>
+                    <p class="preco">
+                        R$59,99</p>
+                    <img
+                    src="https://sabores-new.s3.amazonaws.com/public/2024/11/temaki-de-salmao.jpg"
+                    alt="porção de temaki - 4 peças">
+                    <h3></h3>
+                          <!--Botão que abre o Modal-->
+                        <button>
+                            <class="botao"
+                            onclick="document.getElementById ('modal-porção-de-temaki').style.display"='block'>
+                            comprar
+                        </button>
+                </div>
+            </section>
+<section id="produtos">
+                <!--div com produtos-->
+                <div class="produtos">
+                    <!--Imagens do Produto-->
+                    <h3>yakisoba - 1 porção</h3>
+                    <p class="preco">
+                        R$47,99</p>
+                    <img
+                    src="https://img.band.com.br/image/2024/07/08/soba-e-receita-oriental-pratica-e-levinha-112853.jpg"
+                    alt="yakisoba - 1 porção">
+                    <h3></h3>
+                          <!--Botão que abre o Modal-->
+                        <button>
+                            <class="botao"
+                            onclick="document.getElementById ('modal-yakisoba').style.display"='block'>
+                            comprar
+                        </button>
+                </div>
+            </section>
+
+            <!--Sobre a Loja-->
+            <section id="sobre">
+                <div class="sobre">
+                    <h2>Sobre a loja</h2>
+                    <p>Nosso restaurante é especializado em culinária japonesa, oferecendo pratos como sushi, sashimi, temaki e yakisoba, preparados com ingredientes frescos e de qualidade. Com um ambiente confortável e inspirado na cultura japonesa, buscamos proporcionar aos clientes uma experiência gastronômica agradável, unindo tradição, sabor e uma apresentação cuidadosa dos pratos</p>
+                </div>
+            </section>
+
+            <!--Seção de Contatos-->
+            <section id="contato">
+                <div class="contato">
+                <h2>Contatos</h2>
+                <p>Email: tsukisushi@gmail.com</p>
+            </div>
+            </section>
+            <!--Seção de Contatos (Formulário)-->
+            <section id="formulario">
+                <div class="formulario">
+                    <h2>Envie uma mensagem</h2>
+                    <form id="contato-form">
+                        <!-- Campo para o nome -->
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                        <!-- Campo para o email -->
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                        <!-- Campo para o telefone -->
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu número de telefone" required>
+                        <!--Campo para escolher o assunto-->
+                        <laabel id="assunto">Assunto:</label>
+                        <select id="assunto" name="assunto">
+                            <option value="duvida">Dúvida</option>
+                            <option value="elogio">Elogio</option>
+                            <option value="reclamacao">Reclamação</option>
+                        </select>
+                        <!-- Campo para a mensagem -->
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Deixe sua mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </section>
+            </main>
+
+            <!--FOOTER sempre fora do main-->
+            <!--FOOTER (rodapé)-->
+            <footer>
+                <div class="rodape">
+                    <p>Desde 2018 - Tsuki Sushi</p>
+                </div>
+            </footer>
+</body>
+</html>

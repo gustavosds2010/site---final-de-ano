@@ -1,0 +1,240 @@
+/*Configuações Gerais*/
+* {
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Aria', sans-serif;
+    background-color:rgb(43, 41, 41);
+    color: bisque;
+}
+/*Cabeçalho*/
+header {
+    font-family: 'Brush Script MT', kaufmann;
+    background-color:brown;
+    color:black;
+    padding: 25px;
+    text-align: center;
+}
+.logo h1{
+    font-size: 50px;
+}
+.logo p {
+    font-size: 20px;
+}
+/*Menu de Navegação*/
+nav {
+    background-color: rgb(12, 102, 102);
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+}
+.menu a {
+    color: bisque;
+    text-decoration: name;
+}
+.menu a:hoover {
+    color: bisque;
+}
+/*Conteúdo Principal*/
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*Banner*/
+.banner {
+    background-color: rgb(41, 81, 87);
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 30px;
+}
+.banener h2 {
+    margin-bottom: 15px;
+}
+/*Seção de Produtos*/
+.produtos {
+    text-align: center;
+    padding: 20px;
+}
+#produtos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+/*div que organiza os produtos*/
+.lista-produtos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+/*Cartão do Produto*/
+.produtos {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(31, 58, 44);
+    padding: 15px;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+/*imagem do produto*/
+.produtos img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+/*nome do produto*/
+.produtos h3 {
+    margin: 15px 0 10px;
+}
+/*preço do produto*/
+.produtos p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+/*botão de compra*/
+.botão-comprar {
+    background-color: chocolate;
+    color: bisque;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/*Efeito de hover no botão de compra*/
+.botão-comprar:hover {
+    background-color: darkorange;
+}
+/*seção de sobre*/
+.sobre {
+    background-color: rgb(12, 102, 102);
+    padding: 40px 20px;
+    text-align: center;
+}
+.sobre h2 {
+    margin-bottom: 15px;
+}
+/*seção de contato*/
+.contato {
+    background-color: rgb(41, 81, 87);
+    padding: 40px 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+.contato h2 {
+    margin-bottom: 15px;
+}
+/*Rodapé*/
+footer {
+    background-color: teal;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+/*Estilos do Modal*/
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed; /* Fixa na tela */
+    z-index: 1; /* Fica acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Habilita rolagem se necessário */
+    background-color: rgb(0,0,0); /* Fundo preto com opacidade */
+    background-color: rgba(0,0,0,0.4); /* Fundo preto com opacidade */
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% do topo e centralizado */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largura do modal */
+    max-width: 500px; /* Largura máxima do modal */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+/*imagem do produto no modal*/
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+/*Botão de Fechar do Modal*/
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+*/
+
+/*Fomulário de contato*/
+#contato {
+    background-color: burlywood;
+    padding: 40px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#contato h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+/*Formulário de contato*/
+#contato-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+/*Textos dos campos do formulário*/
+#contato label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+/*Campos de texto*/
+#contato input,
+#contato textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+/*Área da mensagem*/
+#contato textarea {
+    resize: vertical;
+    display: block;
+    flex-direction: column;
+    gap: 15px;
+}
+/*Botão*/
+#contato button {
+    width: 100%;
+    margin-top: 20px;
+    background-color: chocolate;
+    color: bisque;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
