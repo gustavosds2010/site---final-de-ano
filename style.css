@@ -63,6 +63,9 @@ main {
 .produtos {
     text-align: center;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 #produtos h2 {
     text-align: center;
@@ -85,6 +88,7 @@ main {
     width: 800px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
 }
 /*imagem do produto*/
 .produtos img {
@@ -131,6 +135,7 @@ main {
     padding: 40px 20px;
     margin-top: 30px;
     text-align: center;
+    margin-bottom: 20px;
 }
 .contato h2 {
     margin-bottom: 15px;
@@ -194,6 +199,9 @@ footer {
     text-align: center;
     margin-bottom: 30px;
 }
+#formulario h2 {
+    margin-bottom: 20px;
+}
 /*Formulário de contato*/
 #contato-form {
     max-width: 600px;
@@ -201,7 +209,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 15px;
-
+    
 }
 /*Textos dos campos do formulário*/
 #contato label {
@@ -211,7 +219,7 @@ footer {
 }
 /*Campos de texto*/
 #contato input,
-#contato textarea{
+#contato textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
