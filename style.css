@@ -106,7 +106,7 @@ main {
     font-weight: bold;
     margin-bottom: 15px;
 }
-/*botão de compra*/
+/*botão de compra
 .botão-comprar {
     background-color: chocolate;
     color: bisque;
@@ -116,10 +116,10 @@ main {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-/*Efeito de hover no botão de compra*/
+/*Efeito de hover no botão de compra
 .botão-comprar:hover {
     background-color: darkorange;
-}
+}*/
 /*seção de sobre*/
 .sobre {
     background-color: rgb(12, 102, 102);
@@ -234,8 +234,8 @@ footer {
     gap: 15px;
 }
 /*Botão*/
-#contato button {
-    width: 100%;
+/*#contato button {
+   width: 100%;
     margin-top: 20px;
     background-color: chocolate;
     color: bisque;
@@ -245,4 +245,27 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 18px;
+}*/
+/*Botão de Brilho*/
+.botao-brilho {
+    background-color: rgb(160, 109, 0);
+    color: bisque;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.botao-brilho:hover {
+    background-color: goldenrod;
+    box-shadow: 0 0 10px rgb(233, 181, 51);
+    transform: scale(1.05);
+    border: 2px solid rgb(255, 192, 20);
+}
+.botao-brilho::selection {
+    background: none;
 }
