@@ -99,7 +99,7 @@ main {
 /*imagem do produto*/
 .produtos img {
     width: 100%;
-    height: auto;
+    height: 400px;
     border-radius: 5px;
 }
 /*nome do produto*/
