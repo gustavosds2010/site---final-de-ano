@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <content="width=device-width, initial-scale=1.0">
-    <title>Site de Compras</title>
+    <title>月 Tsuki Sushi 魚</title>
 </head>
 <body>
     <header>
@@ -29,6 +30,42 @@
         </div>
     </nav>
 
+             <!-- Grupo da direita do menu: tema e carrinho -->
+    <div class="acoes">
+      <!-- Botão que liga e desliga o modo claro (o JavaScript controla).
+           id="botao-tema": nome único para o JavaScript encontrar o botão.
+           type="button": avisa que é um botão comum (não envia formulário). -->
+      <button id="botao-tema" aria-label="Ativar modo claro">
+    ☀️
+</button>
+
+      <!-- Resumo do carrinho. O JavaScript atualiza os dois números.
+           <span> é uma etiqueta "em linha", ótima para trocar só um pedaço do texto. -->
+      
+      <!-- Botão flutuante do carrinho -->
+       <button id="botao-carrinho" class="botao-carrinho">🛒
+        <span id="contador-carrinho">0</span>
+       </button>
+
+       <!-- janela do carrinho -->
+        <div id="modal-carrinho" class="modal-carrinho">
+            <div class="conteudo-carrinho">
+
+                <button id="fechar-carrinho">X</button>
+
+                <h2>Meu Carrinho</h2>
+
+                <div id="itens-carrinho"></div>
+
+                <p>Total: R$ <span id="total-carrinho">0,00</span></p>
+
+                <button id="finalizar-compra">
+                    Finalizar Compra
+                </button>
+            </div>
+        </div>
+    </nav>
+
     <!--Conteúdo Principal-->
 
     <main>
@@ -45,83 +82,110 @@
                 <h2> Nossos Produtos</h2>
                 <!--div com produtos-->
                 <div class="produtos">
+                    <article class="produto" data-id="1">
                     <!--Imagens do Produto-->
                      <h3>Porção de Sushi - 20 Peças</h3>
                     <p class="preco">
                         R$ 34,99</p>
                     <img
-                    src="https://www.receitasnestle.com.br/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/d8cc7f9b55f0ec6787420d920c9e14a1.jpg?itok=bMBMq8NS"
+                    src="imagens/porção-sushi.avif"
                     alt="Porção de Sushi - 20 Peças">
-                    <h3></h3>
-                        <!--Botão que abre o Modal-->
-                        <!--<button>
-                            <class="botao"
-                            onclick="document.getElementById ('modal-porção-de-sushi').style.display"='block'>
-                            comprar
-                        </button>-->
-                        
-                                <a href="#formulario" class="botao-brilho">comprar</a>
-                        
+                    
+                    <!--Botão que abre o Modal-->
+                    <div class="botoes">
+                        <button
+                        type="button"
+                        class="botao-brilho"
+                        data-id="1">
+                        Comprar
+                        </button>
+                        <button class="botao-detalhes botao-secundario"
+                        type="button"
+                        data-id="1">
+                        Detalhes</button>
                 </div>
-            </section>
-            <section id="produtos">
+                </article>
+                </div>
+  
                 <!--div com produtos-->
                 <div class="produtos">
+                    <article class="produto" data-id="2">
                     <!--Imagens do Produto-->
-                    <h3>Porção de Sashimi - 15 Peças</h3>
+                    <h3>Porção de Nigiri - 15 Peças</h3>
                     <p class="preco">
                         R$ 47,99</p>
                     <img
-                    src="https://controlenamao.com.br/blog/wp-content/uploads/2024/12/Nigiri.jpg"
-                    alt="Porção de Sashimi - 15 Peças">
-                    <h3></h3>
+                    src="imagens/porção-nigiri.jpg"
+                    alt="Porção de Nigiri - 15 Peças">
+
                           <!--Botão que abre o Modal-->
-                        <!--<button>
-                            <class="botao"
-                            onclick="document.getElementById ('modal-porção-de-sashimi').style.display"='block'>
-                            comprar
-                        </button>-->
-                        <a href="#formulario" class="botao-brilho">comprar</a>
+                    <div class="botoes">
+                        <button
+                        type="button"
+                        class="botao-brilho"
+                        data-id="2">
+                        Comprar
+                        </button>
+                        <button class="botao-detalhes botao-secundario"
+                        type="button"
+                        data-id="2">
+                        Detalhes</button>
                 </div>
-            </section>
-<section id="produtos">
+                </article>
+                </div>
+
                 <!--div com produtos-->
                 <div class="produtos">
+                    <article class="produto" data-id="3">
                     <!--Imagens do Produto-->
                     <h3>Porção de Temaki - 4 Peças</h3>
                     <p class="preco">
                         R$ 59,99</p>
                     <img
-                    src="https://sabores-new.s3.amazonaws.com/public/2024/11/temaki-de-salmao.jpg"
+                    src="imagens/porção-temaki.jpg"
                     alt="Porção de Temaki - 4 Peças">
-                    <h3></h3>
+
                           <!--Botão que abre o Modal-->
-                        <!--<button>
-                            <class="botao"
-                            onclick="document.getElementById ('modal-porção-de-temaki').style.display"='block'>
-                            comprar
-                        </button>-->
-                        <a href="#formulario" class="botao-brilho">comprar</a>
+                    <div class="botoes">
+                        <button
+                        type="button"
+                        class="botao-brilho"
+                        data-id="3">
+                        Comprar
+                        </button>
+                        <button class="botao-detalhes botao-secundario"
+                        type="button"
+                        data-id="3">
+                        Detalhes</button>
                 </div>
-            </section>
-<section id="produtos">
+                </article>
+                </div>
+    
                 <!--div com produtos-->
                 <div class="produtos">
+                    <article class="produto" data-id="4">
                     <!--Imagens do Produto-->
                     <h3>Yakisoba - 1 Porção</h3>
                     <p class="preco">
-                        R$ 47,99</p>
+                        R$ 27,99</p>
                     <img
-                    src="https://img.band.com.br/image/2024/07/08/soba-e-receita-oriental-pratica-e-levinha-112853.jpg"
+                    src="imagens/porção-yakisoba.jpg"
                     alt="Yakisoba - 1 Porção">
-                    <h3></h3>
-                          <!--Botão que abre o Modal-->
-                        <!--<button>
-                            <class="botao"
-                            onclick="document.getElementById ('modal-yakisoba').style.display"='block'>
-                            comprar
-                        </button>-->
-                        <a href="#formulario" class="botao-brilho">comprar</a>
+                    
+                            <!--Botão que abre o Modal-->
+                    <div class="botoes">
+                        <button
+                        type="button"
+                        class="botao-brilho"
+                        data-id="4">
+                        Comprar
+                        </button>
+                        <button class="botao-detalhes botao-secundario"
+                        type="button"
+                        data-id="4">
+                        Detalhes</button>
+                </div>
+                </article>
                 </div>
             </section>
 
@@ -144,7 +208,7 @@
             <section id="formulario">
                 <div class="formulario">
                     <h2>Cadastro</h2>
-                    <form id="contato-form">
+                    <form action="#" method="post" id="formulario-contato">
                         <!-- Campo para o nome -->
                         <label for="nome">Nome:</label>
                         <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
@@ -177,5 +241,27 @@
                     <p>Desde 2018 - Tsuki Sushi</p>
                 </div>
             </footer>
+                        <!-- ========================================================
+       JANELA DE DETALHES (modal)
+       Fica escondida (o CSS usa display: none) e só aparece quando
+       o JavaScript adiciona a classe "aberto".
+       role="dialog": avisa aos leitores de tela que é uma janela.
+       aria-modal="true": o resto da página fica em segundo plano.
+       aria-labelledby: aponta para o título da janela.
+       ======================================================== -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+    <div class="modal-conteudo">
+      <h3 id="modal-titulo">Produto</h3>
+      <p id="modal-descricao"></p>
+      <p id="modal-preco" class="preco"></p>
+      <div class="botoes">
+        <button id="modal-comprar" type="button">Adicionar ao carrinho</button>
+        <button id="modal-fechar" class="botao-secundario" type="button">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aviso rápido (aparece por alguns segundos ao comprar) -->
+  <div id="aviso" class="aviso" role="status" aria-live="polite"></div>
 </body>
 </html>

@@ -1,78 +1,69 @@
 # 🍣 Tsuki Sushi
 
-Site estático de um restaurante especializado em culinária japonesa, desenvolvido com **HTML5** e **CSS3**. O projeto apresenta alguns pratos do cardápio, informações sobre o restaurante e um formulário para contato.
+> *Tradição, sabor e arte em cada peça.*
 
-## 📌 Sobre o projeto
-
-O **Tsuki Sushi** é uma página demonstrativa com o slogan *“Tradição, sabor e arte em cada peça”*. A proposta é reunir em um só lugar a apresentação do restaurante, seus produtos e um meio para que visitantes enviem dúvidas, elogios ou reclamações.
-
-## ✨ Funcionalidades
-
-- **Cabeçalho:** nome do restaurante e slogan.
-- **Menu de navegação:** links internos para Início, Produtos, Sobre e Contato.
-- **Banner inicial:** mensagem de boas-vindas.
-- **Cardápio:** apresentação de quatro opções, com imagens e preços.
-- **Sobre a loja:** descrição da proposta do restaurante.
-- **Contato:** exibição de um endereço de e-mail.
-- **Formulário de cadastro/contato:** campos para nome, e-mail, telefone, assunto e mensagem.
-- **Links “comprar”:** levam o visitante até a seção do formulário.
-- **Efeitos visuais:** cores personalizadas, cartões, bordas arredondadas e efeito de destaque ao passar o cursor sobre os links de compra.
-
-## 🍱 Produtos apresentados
-
-| Produto | Quantidade indicada | Preço |
-|---|---:|---:|
-| Porção de sushi | 20 peças | R$ 34,99 |
-| Porção de sashimi | 15 peças | R$ 47,99 |
-| Porção de temaki | 4 peças | R$ 59,99 |
-| Yakisoba | 1 porção | R$ 47,99 |
-
-*Os preços e as informações acima são os que aparecem atualmente no código do projeto.*
-
-## 🧰 Tecnologias utilizadas
-
-- **HTML5:** estrutura e conteúdo da página.
-- **CSS3:** cores, tipografia, espaçamento, layout e efeitos de interação.
-- **Imagens externas:** imagens dos pratos carregadas por URLs de outros sites.
-
-## 📁 Estrutura dos arquivos
-
-```text
-tsuki-sushi/
-├── index.html   # Estrutura e conteúdo do site
-├── style.css    # Estilos visuais
-└── README.md    # Documentação do projeto
-```
-
-## 🚀 Como executar
-
-1. Baixe ou clone os arquivos do projeto.
-2. Mantenha `index.html` e `style.css` na mesma pasta.
-3. Abra o arquivo `index.html` em um navegador.
-4. Para editar o site, altere o HTML para modificar o conteúdo e o CSS para modificar a aparência.
-
-Não é necessário instalar dependências ou executar um servidor para visualizar a versão estática básica. É necessária uma conexão com a internet para carregar as imagens hospedadas externamente.
-
-## 🎨 Identidade visual
-
-O CSS utiliza uma combinação de tons escuros, verde-petróleo, marrom, bege e dourado. O layout inclui um cabeçalho centralizado, menu de navegação, banner, cartões de produtos e seções informativas.
-
-## 📝 Observações e melhorias futuras
-
-Este README descreve o que está presente nos arquivos atuais. Algumas melhorias que podem ser feitas em versões futuras:
-
-- Agrupar todos os produtos em uma única seção e organizar os cartões em uma grade responsiva.
-- Corrigir pequenos erros de digitação e declarações CSS para garantir a aplicação consistente dos estilos.
-- Ajustar os seletores do formulário para que os estilos sejam aplicados aos campos da seção correta.
-- Verificar a semântica e a unicidade dos identificadores HTML.
-- Implementar o envio real do formulário: no estado atual, o HTML define os campos, mas não há código JavaScript ou integração com servidor visível para processar as mensagens.
-- Integrar os links de compra a um fluxo de pedido real, caso essa funcionalidade seja desejada.
-- Adicionar uma regra de responsividade para telas menores.
-
-## 📬 Contato exibido no site
-
-**E-mail:** contatos@tsukisushi.com
+Projeto final desenvolvido com o objetivo de criar uma aplicação web interativa e funcional para um restaurante japonês, aplicando conceitos modernos de desenvolvimento front-end, lógica com JavaScript e controle de versão com Git e GitHub.
 
 ---
 
-Projeto demonstrativo desenvolvido para praticar estruturação de páginas com HTML e estilização com CSS.
+## 🚀 Sobre o Projeto
+
+O **Tsuki Sushi** evoluiu de uma página estática básica para uma aplicação web dinâmica e completa de e-commerce. O sistema simula a experiência real de um cliente navegando por um cardápio digital, explorando detalhes dos produtos, gerenciando um carrinho de compras interativo, alternando temas visuais e enviando mensagens validadas via formulário.
+
+---
+
+## ✨ Funcionalidades Implementadas
+
+* **Catálogo Dinâmico:** Renderização de pratos tradicionais japoneses (Sushi, Nigiri, Temaki e Yakisoba) com preços, descrições detalhadas e imagens.
+* **Carrinho de Compras Interativo:** 
+  * Adição, controle de quantidade e remoção de itens.
+  * Cálculo em tempo real do submetodo, quantidade de itens e valor total da compra.
+  * Janela modal flutuante dedicada para visualização do carrinho.
+* **Janela Modal de Detalhes:** Exibição de informações aprofundadas ao clicar no botão "Detalhes" de cada prato, com suporte a fechamento por clique externo ou pela tecla `Esc`.
+* **Modo Claro / Escuro (Dark/Light Mode):** Alternância dinâmica de tema visual com salvamento automático da preferência do usuário utilizando o `localStorage`.
+* **Validação Robusta de Formulário:** Validação de campos (como nome com mínimo de letras, e-mail e telefone) com feedback visual de erros/sucessos e navegação inteligente por scroll.
+* **Design Responsivo:** Layout totalmente adaptado para diferentes dispositivos (smartphones, tablets e computadores) utilizando Flexbox e Media Queries.
+
+---
+
+## 🛠️ Tecnologias e Ferramentas Utilizadas
+
+Este projeto foi construído utilizando as seguintes tecnologias e práticas:
+
+* **HTML5:** Estruturação semântica e acessível da página (com uso de elementos de diálogo e formulários avançados).
+* **CSS3:** Estilização visual customizada, variáveis de tema, efeitos de transição/hover e responsividade.
+* **JavaScript (ES6+):** Manipulação do DOM, controle de estado, funções de manipulação de arrays (`map`, `filter`, `reduce`), eventos (`addEventListener`) e armazenamento local (`localStorage`).
+* **Git & GitHub:** Controle de versionamento de código, histórico de commits e hospedagem do repositório.
+
+---
+
+## 📁 Estrutura de Arquivos
+
+```text
+Site Final de Ano/
+│
+├── imagens/              # Pasta contendo os recursos visuais e fundos do site
+├── index.html            # Arquivo principal de marcação HTML
+├── style.css             # Estilos visuais e regras de responsividade
+├── script.js             # Lógica de interatividade, carrinho e validações
+└── README.md             # Documentação oficial do projeto
+```
+## 🚀 Como Executar o Projeto Localmente
+Clone este repositório para a sua máquina:
+
+```
+git clone [https://github.com/gustavosds2010/site---final-de-ano](https://github.com/gustavosds2010/site---final-de-ano)
+```
+
+Abra a pasta do projeto utilizando o Visual Studio Code.
+
+Para a melhor experiência, utilize a extensão Live Server do VS Code:
+
+Clique com o botão direito no arquivo index.html.
+
+Selecione "Open with Live Server".
+
+O projeto abrirá automaticamente no seu navegador padrão com atualização dinâmica.
+
+## 👨‍💻 Autor
+Projeto desenvolvido por Gustavo Soares como parte da entrega do projeto final do módulo 1 do curso.
