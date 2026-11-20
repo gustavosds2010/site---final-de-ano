@@ -38,7 +38,7 @@ nav {
     background-color: rgb(160, 109, 0);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.456);
     position: sticky;
-    top: 144px;
+    top: 134px;
 }
 .menu {
     display: flex;

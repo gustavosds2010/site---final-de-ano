@@ -482,18 +482,18 @@ finalizarCompra.addEventListener('click', () => {
     //});
 
     // --- TESTE 2: ler o que o usuário digitou ---
-    botaoSaudacao.addEventListener('click', () => {
+//botaoSaudacao.addEventListener('click', () => {
       // .value lê o texto do campo.
       // .trim() remove espaços do começo e do fim.
-      const nome = campoNomeDemo.value.trim();
+     // const nome = campoNomeDemo.value.trim();
 
       // Se o nome estiver vazio (''), pede para digitar.
-      if (nome === '') {
-        resultadoSaudacao.textContent = 'Digite o seu nome primeiro.';
-      } else {
-        resultadoSaudacao.textContent = `Olá, ${nome}! Seja bem-vindo à ${nomeDaLoja}.`;
-      }
-    });
+     // if (nome === '') {
+     //   resultadoSaudacao.textContent = 'Digite o seu nome primeiro.';
+      //} else {
+        //resultadoSaudacao.textContent = `Olá, ${nome}! Seja bem-vindo à ${nomeDaLoja}.`;
+      //}
+   // });
 
 
     // ==========================================================
