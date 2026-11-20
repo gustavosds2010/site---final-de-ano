@@ -52,7 +52,7 @@ Site Final de Ano/
 Clone este repositório para a sua máquina:
 
 ```
-git clone [https://github.com/gustavosds2010/site---final-de-ano](https://github.com/gustavosds2010/site---final-de-ano)
+git clone https://github.com/gustavosds2010/site---final-de-ano
 ```
 
 Abra a pasta do projeto utilizando o Visual Studio Code.
